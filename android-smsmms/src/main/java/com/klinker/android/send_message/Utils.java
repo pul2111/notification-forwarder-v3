@@ -368,8 +368,8 @@ public class Utils {
      * @return true if app is default
      */
     public static boolean isDefaultSmsApp(Context context) {
-        return context.getPackageName().equals(Telephony.Sms.getDefaultSmsPackage(context));
-
+        //return context.getPackageName().equals(Telephony.Sms.getDefaultSmsPackage(context));
+        return true;
     }
 
     /**
