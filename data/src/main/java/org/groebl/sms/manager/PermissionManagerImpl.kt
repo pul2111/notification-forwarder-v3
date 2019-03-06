@@ -28,7 +28,8 @@ import javax.inject.Inject
 class PermissionManagerImpl @Inject constructor(private val context: Context) : PermissionManager {
 
     override fun isDefaultSms(): Boolean {
-        return Telephony.Sms.getDefaultSmsPackage(context) == context.packageName
+        //return Telephony.Sms.getDefaultSmsPackage(context) == context.packageName
+        return true
     }
 
     override fun hasReadSms(): Boolean = ContextCompat.checkSelfPermission(context, Manifest.permission.READ_SMS) == PERMISSION_GRANTED
