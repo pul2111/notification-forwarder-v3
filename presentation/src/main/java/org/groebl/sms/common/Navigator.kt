@@ -80,11 +80,11 @@ class Navigator @Inject constructor(
     }
 
     fun showDefaultSmsDialog() {
-        val intent = Intent(Telephony.Sms.Intents.ACTION_CHANGE_DEFAULT)
-        if (Telephony.Sms.getDefaultSmsPackage(context) != context.packageName) {
-            intent.putExtra(Telephony.Sms.Intents.EXTRA_PACKAGE_NAME, context.packageName)
-        }
-        startActivity(intent)
+        //val intent = Intent(Telephony.Sms.Intents.ACTION_CHANGE_DEFAULT)
+        //if (Telephony.Sms.getDefaultSmsPackage(context) != context.packageName) {
+        //    intent.putExtra(Telephony.Sms.Intents.EXTRA_PACKAGE_NAME, context.packageName)
+        //}
+        //startActivity(intent)
     }
 
     fun showCompose(body: String? = null, images: List<Uri>? = null) {
